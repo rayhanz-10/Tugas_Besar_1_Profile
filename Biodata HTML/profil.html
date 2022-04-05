@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profle Card Rayhanz </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
+  <body>
+    <div class="card-container">
+      <span class="pro"><i class="message fas fa-envelope"></i></span>
+      <img class="round" src="assets/Rayhanz.jpg" alt="user" />
+      <div class="text" id="nama"></div>
+      <p> Saya Rayhanz Audwianza Hermawan<br>Mahasiswa Universitas Mercubuana<br>Jurusan Teknik Informatika</p>
+      <div class="buttons">
+        <div class="bottom-section">
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-link"></i></a>
+          </div>
+      </div>
+        <button class="primary ghost">
+          FOLLOW ME
+        </button>
+      <div class="skills">
+        
+        <h6>Skills</h6>
+        <ul>
+          <li> PHP</li>
+          <li> Oracle</li>
+          <li> C++</li>
+          <li> Mobile Legend</li>
+        </ul>
+      </div>
+    </div>
+    <button onclick="konfirmasi()">Tombol Keterangan</button>
+    <p id="pesan"></p>
+    <script>
+      function konfirmasi(){
+         var tanya = confirm("Apakah Anda ingin melihat keterangan?");
+ 
+         if(tanya === true) {
+            pesan = "Website ini di buat untuk melaksanakan tugas besar 1 pemrogaman web";
+         }else{
+            pesan = "Ayo Dong Di Lihat";
+         }
+ 
+         document.getElementById("pesan").innerHTML = pesan;
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  max-width: 65%;
+  height: auto;
+}
